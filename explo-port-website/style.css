@@ -1,0 +1,526 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+    --body-font: 'Poppins', sans-serif;
+}
+
+/* Global Settings */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    color: #112D4E;
+    background-color: #F9F7F7 !important;
+    scroll-behavior: smooth;
+    font-family: var(--body-font);
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* General Elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+u {
+    text-underline-offset: 15%;
+}
+
+/* Section Styling */
+section .welcome, .about, .education {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #0c294a;
+    transition: background-color 0.3s ease;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: 60px;
+}
+
+header.transparent {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    list-style: none;
+    margin-top: 1%;
+}
+
+nav ul li {
+    color: #F9F7F7;
+}
+
+nav ul li a {
+    color: #F9F7F7;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+header.transparent nav ul li a {
+    color: black;
+}
+
+.name {
+    font-size: 24px;
+    margin-right: auto;
+    font-weight: 600;
+}
+
+.section {
+    margin-left: 20px;
+}
+
+/* Welcome Section */
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding-left: 5%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    font-weight: 600;
+}
+
+.text1 {
+    flex: 1;
+    margin-left: 30px;
+    font-size: 200%;
+    z-index: 2;
+}
+
+.text1 h1 {
+    font-weight: 600;
+}
+
+.text1 span {
+    color: #3F72AF;
+    font-weight: 600;
+}
+
+.text1 h1 span {
+    display: inline-block;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+
+.image1 {
+    flex: 1;
+    max-width: 40%;
+    height: auto;
+    margin-right: 30px;
+    z-index: 2;
+}
+
+/* About Section */
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.about div {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.text2 h3 {
+    text-align: center;
+    font-weight: 600;
+    border: 2px #000;
+}
+
+/* Education Section */
+.text3 h3 {
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.education {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #F9F7F7;
+}
+
+.school {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    grid-template-areas:
+        "school1 school2 school3"
+        "school4 school5 .";
+}
+
+.school-box {
+    background-color: #d2def3;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+}
+
+.school-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.nameschool {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.school p {
+    color: #112D4E;
+}
+
+.school1 { grid-area: school1; }
+.school2 { grid-area: school2; }
+.school3 { grid-area: school3; }
+.school4 { grid-area: school4; }
+.school5 { grid-area: school5; }
+
+/* Responsive Layout */
+
+
+/* Skill Section */
+.skill {
+    margin: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.skill h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    max-width: 600px;
+}
+
+.skill-box {
+    border: 2px solid #3F72AF;
+    padding: 30px; /* เพิ่ม padding */
+    text-align: center;
+    width: 200px; /* เปลี่ยนความกว้างให้ใหญ่ขึ้น */
+    height: 150px; /* เพิ่มความสูงตามที่ต้องการ */
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* เพิ่มเอฟเฟกต์ */
+    color: #112D4E;
+    background-color: #DBE2EF;
+}
+
+
+.skill-box:hover {
+    transform: translateY(-10px);
+}
+
+.skill-box i {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skill-logo {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Responsive Skill Section */
+
+
+/* Contact Form */
+.contact-form-section h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #112D4E;
+    font-weight: 600;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #DBE2EF;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #F9F7F7;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #112D4E;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #3F72AF;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    background-color: #f0f8ff;
+    outline: none;
+}
+
+/* Social Icons */
+.App{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    background-color:#112D4E;
+}
+
+/* ตั้งค่าให้ไอคอนแยกจากเส้น hr */
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* ระยะห่างระหว่างเส้น hr กับไอคอน */
+}
+
+.social ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* ระยะห่างระหว่างแต่ละไอคอน */
+}
+
+.social ul li {
+    display: inline-block;
+}
+
+.social ul li a {
+    font-size: 2rem; /* ขนาดของไอคอน */
+    color: #000; /* สีของไอคอน */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social ul li a:hover {
+    color: #555; /* เปลี่ยนสีไอคอนเมื่อ hover */
+}
+
+/* ปรับขนาดและจัดตำแหน่งไอคอนโทรศัพท์ */
+.social ul li a i.fas.fa-phone {
+    font-size: 28px; /* ขนาดไอคอนโทรศัพท์ */
+}
+
+/* กำหนดสีของไอคอน */
+.social ul li a .fa-instagram {
+    color: #E4405F;
+}
+
+.social ul li a .fa-facebook {
+    color: #1877F2;
+}
+
+.social ul li a .fa-phone {
+    color: #4CAF50;
+}
+
+/* เปลี่ยนสีไอคอนเมื่อ hover */
+.social ul li a:hover .fa-instagram,
+.social ul li a:hover .fa-facebook,
+.social ul li a:hover .fa-phone {
+    color: #ffd700;
+}
+
+/* Responsive Layout */
+@media (max-width: 1024px) {
+    .welcome .text1 {
+        font-size: 140%; /* Further reduce font size for medium screens */
+        margin-left: 10px; /* Adjust margin */
+    }
+
+    .image1 {
+        max-width: 70%; /* Adjust image size */
+        margin-right: 10px; /* Adjust margin */
+    }
+
+    .about {
+        font-size: 16px; /* Slightly smaller font size */
+        padding: 10px; /* Add padding for better spacing */
+    }
+
+    .school {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+        gap: 15px; /* Adjust gap between items */
+    }
+
+    .education {
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    .skill {
+        margin: 20px; /* Adjust margin for better spacing */
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align */
+        padding: 20px; /* Add padding for better spacing */
+    }
+
+    .welcome .text1 {
+        margin-left: 0; /* Reset margin */
+        text-align: center; /* Center align text */
+        font-size: 120%; /* Further reduce font size */
+    }
+
+    .image1 {
+        max-width: 90%; /* Adjust image size */
+        margin: 20px 0; /* Add margin for spacing */
+    }
+
+    .about {
+        font-size: 15px; /* Smaller font size for better readability */
+    }
+
+    .school {
+        grid-template-columns: 1fr; /* Single column on small screens */
+        gap: 20px; /* Adjust gap between items */
+        grid-template-columns: 1fr; /* เปลี่ยนเป็น 1 คอลัมน์ */
+        grid-template-areas:
+            "school1"
+            "school2"
+            "school3"
+            "school4"
+            "school5";
+    }
+
+    .education {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .skill {
+        margin: 10px; /* Reduce margin for smaller screens */
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr; /* Single column on small screens */
+        gap: 20px; /* Adjust gap between items */
+    }
+
+    .skill-box {
+        width: 95%; /* Make skill boxes responsive */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form-section h3 {
+        font-size: 1.5rem; /* Smaller heading font size */
+    }
+
+    .contact-form {
+        padding: 15px; /* Reduce padding */
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        font-size: 0.9rem; /* Smaller input font size */
+        padding: 8px; /* Adjust padding for inputs */
+    }
+
+    .skill h3 {
+        margin-bottom: 30px; /* Adjust spacing */
+    }
+
+    .social ul {
+        flex-direction: column; /* Stack social icons vertically */
+        gap: 10px; /* Space between icons */
+    }
+
+    .social ul li a {
+        font-size: 1.5rem; /* Adjust icon size for better visibility */
+    }
+
+    .education {
+        margin-bottom: 100px; /* Increase margin to prevent overlap */
+    }
+
+    .skill {
+        margin-bottom: 100px; /* Increase margin to prevent overlap */
+    }
+}

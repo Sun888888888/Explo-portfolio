@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.8.1/css/foundation.min.css">
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <header>
+        <nav  class="navbar">
+            <ul>
+                <li class = "name"><a href="#home">SUN</a></li>
+                <li class = "section"><a href="#about">About</a></li>
+                <li class = "section"><a href="#education">Education</a></li>
+                <li class = "section"><a href="#skill">Skill</a></li>
+                <li class = "section"><a href="#contact">Contact</a></li>
+                
+            </ul>
+            
+        </nav>
+    </header>
+
+    <section class="welcome" id="home" data-aos="fade-in">
+        <div class="text1">
+            <h1>Hi'</h1>
+            <h1>I'm <span>Napat</span></h1>
+            <p id="typing"></p>
+        </div>
+        <img src="profile1.png" alt="myprofile" class="image1" >
+    </section>
+
+    <section class="about" id="about">
+        <div class = "text2">
+            <h3><u>ABOUT</u></h3>
+            <br>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Hello! My name is Napat Kasemweerasan, but you can call me Sun. I am currently studying Computer Engineering at King Mongkut's University of Technology Thonburi. My main interests include web development, programming, and solving information technology challenges. I am dedicated to continuously improving my skills to create innovative solutions that will be beneficial in the future."        </div>
+    </section>
+    
+    <section class="education" id="education">
+        <div class="text3">
+            <h3><u>EDUCATION</u></h3>
+            <br>
+            <div class="school">
+                <div class="school-box school1">
+                    <p class="nameschool">King Mongkut's University of Technology Thonburi</p>
+                    <p>Bachelor degrees</p>
+                    <p>2024-Now</p>
+                </div>
+                <div class="school-box school2">
+                    <p class="nameschool">The Demonstration School of Bansomdejchaopraya Rajabhat University</p>
+                    <p>Secondary school</p>
+                    <p>2018-2024</p>
+                </div>
+                <div class="school-box school3">
+                    <p class="nameschool">Yooyenwitthaya School</p>
+                    <p>Primary school</p>
+                    <p>2016-2018</p>
+                </div>
+                <div class="school-box school4">
+                    <p class="nameschool">Kornpitack Suksa School</p>
+                    <p>Primary school</p>
+                    <p>2014-2016</p>
+                </div>
+                <div class="school-box school5">
+                    <p class="nameschool">The Demonstration School of Bansomdejchaopraya Rajabhat University</p>
+                    <p>Primary school</p>
+                    <p>2012-2014</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skill" id="skill">
+        <div class="container">
+            <h3><u>SKILLS</u></h3>
+            <div class="skills-grid">
+                    <div class="skill-box"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/109px-Python-logo-notext.svg.png" alt="Python logo" class="skill-logo">Python</div>
+                    <div class="skill-box"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/C_Logo.png/107px-C_Logo.png" alt="C logo" class="skill-logo">C</div>
+                    <div class="skill-box"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/107px-ISO_C%2B%2B_Logo.svg.png" alt="C++ logo" class="skill-logo">C++</div>
+                    <div class="skill-box"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/36px-HTML5_Badge.svg.png" alt="HTML logo" class="skill-logo">HTML</div>
+                    <div class="skill-box"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/180px-CSS3_logo.svg.png" alt="CSS logo" class="skill-logo">CSS</div>
+                    <div class="skill-box"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/120px-JavaScript-logo.png" alt="JS logo" class="skill-logo">JS</div>
+            </div>
+        </div>
+    </section>
+  
+    <section class="contact" id="contact" >
+        <div class="contact-form-section">
+        <h3><u>Contact Form</u></h3> <!-- หัวข้อแยกออกจากกล่องฟอร์ม -->
+        </div>
+        <div class="contact-form">
+            <form action="your-server-endpoint" method="post">
+                <div class="form-group">
+                
+                    <input type="text"  placeholder="Name" name="name" required>
+                </div>
+            
+                <div class="form-group">
+                    <input type="email" placeholder="Email" name="email" required>
+                </div>
+            
+                <div class="form-group">
+                    <textarea id="message" placeholder="Message" rows="5" required></textarea>
+                </div>
+            
+                <div class="form-group">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <section class="App">
+        <hr>
+        <div class="social">
+            <ul>
+                <li><a href="https://www.facebook.com/sun.napat.77?mibextid=LQQJ4d" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/sun.napat/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="tel:+1234567890"><i class="fas fa-phone"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            offset : 300,
+            duration: 1400,
+          }
+          );
+        </script>
+
+</body>
+</html>
